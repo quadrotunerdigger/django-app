@@ -1,0 +1,795 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-09 08:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+
+#: blogapp/models.py:12 blogapp/models.py:49
+#: blogapp/templates/blogapp/article_detail.html:12
+#: blogapp/templates/blogapp/article_list.html:23
+msgid "Author"
+msgstr "Автор"
+
+#: blogapp/models.py:13
+msgid "Authors"
+msgstr "Авторы"
+
+#: blogapp/models.py:23 blogapp/models.py:55
+#: blogapp/templates/blogapp/article_detail.html:17
+#: blogapp/templates/blogapp/article_list.html:28
+msgid "Category"
+msgstr "Категория"
+
+#: blogapp/models.py:24
+msgid "Categories"
+msgstr "Категории"
+
+#: blogapp/models.py:34
+msgid "Tag"
+msgstr "Тег"
+
+#: blogapp/models.py:35 blogapp/models.py:60
+#: blogapp/templates/blogapp/article_detail.html:22
+#: blogapp/templates/blogapp/article_list.html:31
+msgid "Tags"
+msgstr "Теги"
+
+#: blogapp/models.py:42
+msgid "Title"
+msgstr "Название"
+
+#: blogapp/models.py:43 blogapp/templates/blogapp/article_detail.html:31
+msgid "Content"
+msgstr "Содержание"
+
+#: blogapp/models.py:44 blogapp/templates/blogapp/article_detail.html:18
+#: blogapp/templates/blogapp/article_list.html:21
+msgid "Publication date"
+msgstr "Дата публикации"
+
+#: blogapp/models.py:64
+msgid "Article"
+msgstr "Статья"
+
+#: blogapp/models.py:65
+msgid "Articles"
+msgstr "Статьи"
+
+#: blogapp/templates/blogapp/article_detail.html:26
+#: blogapp/templates/blogapp/article_list.html:35
+msgid "No tags"
+msgstr "Нет тегов"
+
+#: blogapp/templates/blogapp/article_detail.html:36
+#: blogapp/templates/blogapp/author_detail.html:36
+msgid "Back to articles list"
+msgstr "Вернуться к списку статей"
+
+#: blogapp/templates/blogapp/article_list.html:6
+#: blogapp/templates/blogapp/article_list.html:10
+msgid "Articles list"
+msgstr "Список статей"
+
+#: blogapp/templates/blogapp/article_list.html:41
+#: blogapp/templates/blogapp/author_detail.html:31
+msgid "No articles yet."
+msgstr "Статей пока нет."
+
+#: blogapp/templates/blogapp/author_detail.html:12
+msgid "Biography"
+msgstr "Биография"
+
+#: blogapp/templates/blogapp/author_detail.html:18
+msgid "Author's articles"
+msgstr "Статьи автора"
+
+#: myauth/forms.py:26
+#, python-format
+msgid "Only JPEG, PNG, WebP are allowed. Received type: %(mime)s"
+msgstr "Разрешены только JPEG, PNG, WebP. Получен тип: %(mime)s"
+
+#: myauth/forms.py:31
+#, python-format
+msgid "Avatar must not exceed %(size)s MB"
+msgstr "Аватар не должен превышать %(size)s МБ"
+
+#: myauth/models.py:17
+msgid "Profile"
+msgstr "Профиль"
+
+#: myauth/models.py:18
+msgid "Profiles"
+msgstr "Профили"
+
+#: myauth/models.py:20 myauth/templates/myauth/user-details.html:6
+#: myauth/templates/myauth/user-details.html:10 shopapp/models.py:110
+msgid "User"
+msgstr "Пользователь"
+
+#: myauth/models.py:21 myauth/templates/myauth/about-me.html:23
+#: myauth/templates/myauth/user-details.html:17
+msgid "Bio"
+msgstr "Биография"
+
+#: myauth/models.py:22
+msgid "Agreement accepted"
+msgstr "Соглашение принято"
+
+#: myauth/models.py:27 myauth/templates/myauth/about-me.html:27
+#: myauth/templates/myauth/about-me.html:28
+#: myauth/templates/myauth/profile_update.html:15
+#: myauth/templates/myauth/user-details.html:21
+#: myauth/templates/myauth/user-details.html:22
+msgid "Avatar"
+msgstr "Аватар"
+
+#: myauth/models.py:33
+msgid "Avatar must not exceed 2 MB"
+msgstr "Аватар не должен превышать 2 МБ"
+
+#: myauth/templates/myauth/about-me.html:7
+msgid "About me"
+msgstr "Обо мне"
+
+#: myauth/templates/myauth/about-me.html:11
+msgid "User info"
+msgstr "Информация о пользователе"
+
+#: myauth/templates/myauth/about-me.html:17
+#: shopapp/templates/shopapp/order_list.html:15
+msgid "Details"
+msgstr "Подробно"
+
+#: myauth/templates/myauth/about-me.html:18
+#: shopapp/templates/shopapp/user_orders_list.html:15
+msgid "Username"
+msgstr "Пользователь"
+
+#: myauth/templates/myauth/about-me.html:19
+#: myauth/templates/myauth/user-details.html:12
+msgid "First name"
+msgstr "Имя"
+
+#: myauth/templates/myauth/about-me.html:20
+#: myauth/templates/myauth/user-details.html:13
+msgid "Last name"
+msgstr "Фамилия"
+
+#: myauth/templates/myauth/about-me.html:21
+#: myauth/templates/myauth/user-details.html:14
+#: shopapp/templates/shopapp/user_orders_list.html:20
+msgid "Email"
+msgstr "Электронная почта"
+
+#: myauth/templates/myauth/about-me.html:31
+msgid "No avatar uploaded"
+msgstr "Аватар ещё не загружен"
+
+#: myauth/templates/myauth/about-me.html:36
+msgid "Edit my profile"
+msgstr "Отредактировать мой профиль"
+
+#: myauth/templates/myauth/about-me.html:43
+msgid "User is anonymous"
+msgstr "Пользователь анонимный"
+
+#: myauth/templates/myauth/login.html:6 myauth/templates/myauth/login.html:10
+#: myauth/templates/myauth/login.html:14
+msgid "Login"
+msgstr "Авторизоваться"
+
+#: myauth/templates/myauth/logout_confirm.html:6
+#: myauth/templates/myauth/logout_confirm.html:10
+msgid "Logout"
+msgstr "Выход из профиля"
+
+#: myauth/templates/myauth/logout_confirm.html:12
+msgid "Are you sure you want to logout?"
+msgstr "Вы уверены, что хотите выйти из профиля?"
+
+#: myauth/templates/myauth/logout_confirm.html:16
+msgid "Yes, logout"
+msgstr "Да, выйти из профиля"
+
+#: myauth/templates/myauth/logout_confirm.html:20
+#: shopapp/templates/shopapp/order_confirm_delete.html:30
+msgid "Cancel"
+msgstr "Отмена"
+
+#: myauth/templates/myauth/profile_update.html:6
+#: myauth/templates/myauth/profile_update.html:10
+msgid "Update Profile"
+msgstr "Обновить профиль"
+
+#: myauth/templates/myauth/profile_update.html:14
+msgid "Current avatar"
+msgstr "Текущий аватар"
+
+#: myauth/templates/myauth/profile_update.html:22
+#: shopapp/templates/shopapp/order_update_form.html:15
+#: shopapp/templates/shopapp/product_update_form.html:15
+msgid "Update"
+msgstr "Обновить"
+
+#: myauth/templates/myauth/profile_update.html:26
+msgid "Back to About me"
+msgstr "Вернуться к странице обо мне"
+
+#: myauth/templates/myauth/register.html:6
+#: myauth/templates/myauth/register.html:10
+#: myauth/templates/myauth/register.html:21
+msgid "Register"
+msgstr "Зарегистрировать"
+
+#: myauth/templates/myauth/user-details.html:25
+msgid "No avatar"
+msgstr "Аватар отсутствует"
+
+#: myauth/templates/myauth/user-details.html:31
+msgid "Edit profile"
+msgstr "Редактировать профиль"
+
+#: myauth/templates/myauth/user-details.html:38
+msgid "Back to users list"
+msgstr "Вернуться на страницу списка пользователей"
+
+#: myauth/templates/myauth/users-list.html:6
+msgid "Users List"
+msgstr "Список пользователей"
+
+#: myauth/templates/myauth/users-list.html:10
+msgid "Users"
+msgstr "Пользователи"
+
+#: myauth/templates/myauth/users-list.html:25
+msgid "No users yet"
+msgstr "Зарегистрированные пользователи отсутствуют"
+
+#: myauth/views.py:22
+msgid "welcome hello world"
+msgstr "Добро пожаловать! Привет, Мир!"
+
+#: myauth/views.py:28
+#, python-brace-format
+msgid "one product"
+msgid_plural "{count} products"
+msgstr[0] "{count} товар"
+msgstr[1] "{count} товара"
+msgstr[2] "{count} товаров"
+
+#: mysite/settings.py:181
+msgid "English"
+msgstr "Английский"
+
+#: mysite/settings.py:182
+msgid "Russian"
+msgstr "Русский"
+
+#: shopapp/forms.py:24
+#, python-format
+msgid "File size must not exceed %(size)s MB. Current size: %(current).2f MB"
+msgstr ""
+"Размер файла не должен превышать %(size)s МБ. Текущий размер: %(current).2f "
+"МБ"
+
+#: shopapp/forms.py:40
+#, python-format
+msgid "Only CSV files are allowed. Received type: %(mime)s"
+msgstr "Разрешены только CSV файлы. Полученный тип: %(mime)s"
+
+#: shopapp/forms.py:52
+#, python-format
+msgid "Only images are allowed: JPEG, PNG, WebP, GIF. Received type: %(mime)s"
+msgstr ""
+"Разрешены только изображения: JPEG, PNG, WebP, GIF. Получен тип: %(mime)s"
+
+#: shopapp/forms.py:57
+#, python-format
+msgid "Image must not exceed %(size)s MB"
+msgstr "Изображение не должно превышать %(size)s МБ"
+
+#: shopapp/forms.py:87 shopapp/templates/shopapp/product-details.html:27
+msgid "Images"
+msgstr "Изображения"
+
+#: shopapp/forms.py:106
+msgid "CSV file"
+msgstr "CSV файлы"
+
+#: shopapp/forms.py:111
+#, python-format
+msgid "Max file size: %(size)s MB. Format: CSV"
+msgstr "Максимальный размер файла: %(size)s МБ. Формат: CSV"
+
+#: shopapp/forms.py:132
+#, python-format
+msgid "Only PDF and images are allowed. Received type: %(mime)s"
+msgstr "Разрешены только PDF и изображения. Получен тип: %(mime)s"
+
+#: shopapp/forms.py:136
+#, python-format
+msgid "File must not exceed %(size)s MB"
+msgstr "Файл не должен превышать %(size)s МБ"
+
+#: shopapp/forms.py:143
+msgid "CSV file with orders"
+msgstr "CSV файл с заказами"
+
+#: shopapp/forms.py:148
+#, python-format
+msgid ""
+"Format: user_id,delivery_address,promocode,product_ids. Max size: %(size)s MB"
+msgstr ""
+"Формат: user_id,delivery_address,promocode,product_ids. Max size: %(size)s) "
+"МБ"
+
+#: shopapp/models.py:28 shopapp/models.py:89
+#: shopapp/templates/shopapp/product-details.html:6
+msgid "Product"
+msgstr "Товар"
+
+#: shopapp/models.py:29 shopapp/models.py:111
+#: shopapp/templates/shopapp/order_confirm_delete.html:15
+#: shopapp/templates/shopapp/products-list.html:10
+#: shopapp/templates/shopapp/user_orders_list.html:40
+msgid "Products"
+msgstr "Товары"
+
+#: shopapp/models.py:36
+msgid "Name"
+msgstr "Название"
+
+#: shopapp/models.py:37 shopapp/models.py:91
+#: shopapp/templates/shopapp/product-details.html:15
+msgid "Description"
+msgstr "Описание"
+
+#: shopapp/models.py:45 shopapp/templates/shopapp/product-details.html:16
+#: shopapp/templates/shopapp/products-list.html:30
+msgid "Price"
+msgstr "Цена"
+
+#: shopapp/models.py:53 shopapp/templates/shopapp/product-details.html:17
+#: shopapp/templates/shopapp/products-list.html:32
+msgid "Discount"
+msgstr "Скидка"
+
+#: shopapp/models.py:55 shopapp/models.py:109
+#: shopapp/templates/shopapp/user_orders_list.html:39
+msgid "Created at"
+msgstr "Создано от"
+
+#: shopapp/models.py:56 shopapp/templates/shopapp/product-details.html:18
+msgid "Archived"
+msgstr "В архиве"
+
+#: shopapp/models.py:57 shopapp/templates/shopapp/product-details.html:22
+msgid "Preview"
+msgstr "Предварительный просмотр"
+
+#: shopapp/models.py:64 shopapp/models.py:119
+msgid "Created by"
+msgstr "Кем создан"
+
+#: shopapp/models.py:70 shopapp/models.py:96
+msgid "Image must not exceed 5 MB"
+msgstr "Изображение не должно превышать 5 МБ"
+
+#: shopapp/models.py:86
+msgid "Product Image"
+msgstr "Изображение товара"
+
+#: shopapp/models.py:87
+msgid "Product Images"
+msgstr "Изображения товаров"
+
+#: shopapp/models.py:90
+msgid "Image"
+msgstr "Изображение"
+
+#: shopapp/models.py:100 shopapp/templates/shopapp/order_detail.html:6
+#: shopapp/templates/shopapp/order_detail.html:10
+#: shopapp/templates/shopapp/user_orders_list.html:36
+msgid "Order"
+msgstr "Заказ"
+
+#: shopapp/models.py:101 shopapp/templates/shopapp/order_list.html:10
+msgid "Orders"
+msgstr "Заказы"
+
+#: shopapp/models.py:107 shopapp/templates/shopapp/order_detail.html:14
+#: shopapp/templates/shopapp/order_list.html:18
+#: shopapp/templates/shopapp/user_orders_list.html:37
+msgid "Delivery address"
+msgstr "Адрес доставки"
+
+#: shopapp/models.py:108 shopapp/templates/shopapp/order_detail.html:13
+#: shopapp/templates/shopapp/order_list.html:17
+#: shopapp/templates/shopapp/user_orders_list.html:38
+msgid "Promocode"
+msgstr "Промокод"
+
+#: shopapp/models.py:112
+msgid "Receipt"
+msgstr "Чек"
+
+#: shopapp/models.py:126
+msgid "Updated by"
+msgstr "Обновлён пользователем"
+
+#: shopapp/models.py:132
+msgid "File must not exceed 10 MB"
+msgstr "Файл не должен превышать 10 МБ"
+
+#: shopapp/templates/admin/csv_form.html:6
+#: shopapp/templates/admin/csv_form.html:10
+#: shopapp/templates/shopapp/orders_changelist.html:8
+#: shopapp/templates/shopapp/products_changelist.html:8
+msgid "Import CSV"
+msgstr "Импорт CSV файла"
+
+#: shopapp/templates/admin/csv_form.html:16
+msgid "Upload CSV"
+msgstr "Загрузить CSV файл"
+
+#: shopapp/templates/shopapp/groups-list.html:6
+msgid "Groups List"
+msgstr "Список групп"
+
+#: shopapp/templates/shopapp/groups-list.html:10
+msgid "Groups"
+msgstr "Группы"
+
+#: shopapp/templates/shopapp/groups-list.html:15
+#: shopapp/templates/shopapp/order_form.html:15
+#: shopapp/templates/shopapp/product_form.html:15
+msgid "Create"
+msgstr "Создать"
+
+#: shopapp/templates/shopapp/groups-list.html:21
+msgid "No groups yet"
+msgstr "Группы отсутствуют"
+
+#: shopapp/templates/shopapp/order_confirm_delete.html:6
+#: shopapp/templates/shopapp/order_detail.html:33
+msgid "Delete order"
+msgstr "Удалить заказ"
+
+#: shopapp/templates/shopapp/order_confirm_delete.html:10
+#, python-format
+msgid ""
+"\n"
+"        <h1>Are you sure you want to delete order #%(pk)s?</h1>\n"
+"    "
+msgstr ""
+"\n"
+"        <h1>Вы уверены, что хотите удалить заказ #%(pk)s?</h1>\n"
+"    "
+
+#: shopapp/templates/shopapp/order_confirm_delete.html:14
+#: shopapp/templates/shopapp/order_detail.html:12
+#: shopapp/templates/shopapp/order_list.html:16
+msgid "Order by"
+msgstr "Заказ пользователя"
+
+#: shopapp/templates/shopapp/order_confirm_delete.html:24
+msgid "Yes, delete"
+msgstr "Да, удалить заказ"
+
+#: shopapp/templates/shopapp/order_detail.html:6
+msgid "details"
+msgstr "подробно"
+
+#: shopapp/templates/shopapp/order_detail.html:16
+#: shopapp/templates/shopapp/order_list.html:20
+msgid "Products in order"
+msgstr "Товары в заказе"
+
+#: shopapp/templates/shopapp/order_detail.html:19
+#: shopapp/templates/shopapp/order_list.html:23
+msgid "rub."
+msgstr "руб."
+
+#: shopapp/templates/shopapp/order_detail.html:27
+#: shopapp/templates/shopapp/order_update_form.html:6
+#: shopapp/templates/shopapp/order_update_form.html:10
+msgid "Update order"
+msgstr "Обновить заказ"
+
+#: shopapp/templates/shopapp/order_detail.html:39
+#: shopapp/templates/shopapp/order_form.html:21
+msgid "Return to orders list"
+msgstr "Вернуться на страницу списка заказов"
+
+#: shopapp/templates/shopapp/order_form.html:6
+#: shopapp/templates/shopapp/order_form.html:10
+msgid "Create order"
+msgstr "Создать товар"
+
+#: shopapp/templates/shopapp/order_list.html:6
+msgid "Orders list"
+msgstr "Список заказов"
+
+#: shopapp/templates/shopapp/order_list.html:32
+msgid "No orders yet"
+msgstr "Заказы отсутствуют"
+
+#: shopapp/templates/shopapp/order_list.html:37
+msgid "Create a new order"
+msgstr "Создать новый заказ"
+
+#: shopapp/templates/shopapp/order_update_form.html:21
+msgid "Return to order"
+msgstr "Вернуться на страницу заказа"
+
+#: shopapp/templates/shopapp/orders_changelist.html:13
+#: shopapp/templates/shopapp/products_changelist.html:13
+msgid "Export CSV"
+msgstr "Экспорт CSV файла"
+
+#: shopapp/templates/shopapp/product-details.html:10
+#, python-format
+msgid ""
+"\n"
+"        <h1>Product <strong>%(name)s</strong></h1>\n"
+"    "
+msgstr ""
+"\n"
+"        <h1>Товар <strong>%(name)s</strong></h1>\n"
+"    "
+
+#: shopapp/templates/shopapp/product-details.html:30
+#, python-format
+msgid ""
+"\n"
+"                    %(count)s image available\n"
+"                "
+msgid_plural ""
+"\n"
+"                    %(count)s images available\n"
+"                "
+msgstr[0] ""
+"\n"
+"                    Доступно %(count)s изображение\n"
+"                "
+msgstr[1] ""
+"\n"
+"                    Доступно %(count)s изображения\n"
+"                "
+msgstr[2] ""
+"\n"
+"                    Доступно %(count)s изображений\n"
+"                "
+
+#: shopapp/templates/shopapp/product-details.html:47
+msgid "No images uploaded yet"
+msgstr "Изображения не загружены"
+
+#: shopapp/templates/shopapp/product-details.html:54
+#: shopapp/templates/shopapp/product_update_form.html:6
+#: shopapp/templates/shopapp/product_update_form.html:10
+msgid "Update product"
+msgstr "Обновить товар"
+
+#: shopapp/templates/shopapp/product-details.html:60
+msgid "Archive product"
+msgstr "Архивировать товар"
+
+#: shopapp/templates/shopapp/product-details.html:66
+#: shopapp/templates/shopapp/product_form.html:21
+msgid "Return to products list"
+msgstr "Вернуться на страницу списка товаров"
+
+#: shopapp/templates/shopapp/product_confirm_delete.html:6
+msgid "Confirm archive"
+msgstr "Подтвердить архивирование"
+
+#: shopapp/templates/shopapp/product_confirm_delete.html:10
+#, python-format
+msgid ""
+"\n"
+"        <h1>Are you sure you want to archive %(name)s?</h1>\n"
+"    "
+msgstr ""
+"\n"
+"        <h1>Вы уверены, что хотите архивировать %(name)s?</h1>\n"
+"    "
+
+#: shopapp/templates/shopapp/product_confirm_delete.html:17
+msgid "Archive"
+msgstr "Архивировать"
+
+#: shopapp/templates/shopapp/product_confirm_delete.html:23
+#: shopapp/templates/shopapp/product_update_form.html:21
+msgid "Return to product"
+msgstr "Вернуться на страницу товара"
+
+#: shopapp/templates/shopapp/product_form.html:6
+#: shopapp/templates/shopapp/product_form.html:10
+msgid "Create product"
+msgstr "Создать товар"
+
+#: shopapp/templates/shopapp/products-list.html:6
+msgid "Products list"
+msgstr "Список товаров"
+
+#: shopapp/templates/shopapp/products-list.html:14
+#, python-format
+msgid ""
+"\n"
+"            There is only one product:\n"
+"            "
+msgid_plural ""
+"\n"
+"            There are %(product_count)s products:\n"
+"        "
+msgstr[0] ""
+"\n"
+"            Доступен %(product_count)s товар:\n"
+"        "
+msgstr[1] ""
+"\n"
+"            Доступно %(product_count)s товара:\n"
+"        "
+msgstr[2] ""
+"\n"
+"            Доступно %(product_count)s товаров:\n"
+"        "
+
+#: shopapp/templates/shopapp/products-list.html:25
+msgctxt "product name"
+msgid "Name"
+msgstr "Название товара"
+
+#: shopapp/templates/shopapp/products-list.html:31
+msgid "no discount"
+msgstr "скидка отсутствует"
+
+#: shopapp/templates/shopapp/products-list.html:45
+msgid "No products yet"
+msgstr "Товары отсутствуют"
+
+#: shopapp/templates/shopapp/products-list.html:50
+#, python-format
+msgid ""
+"\n"
+"            <div>\n"
+"                <a href=\"%(product_create_url)s\">\n"
+"                    Create a new product\n"
+"                </a>\n"
+"            </div>\n"
+"        "
+msgstr ""
+"\n"
+"            <div>\n"
+"                <a href=\"%(product_create_url)s\">\n"
+"                    Создать новый товар\n"
+"                </a>\n"
+"            </div>\n"
+"        "
+
+#: shopapp/templates/shopapp/shop-index.html:7
+msgid "Home - Shop"
+msgstr "Главная страница - Магазин"
+
+#: shopapp/templates/shopapp/shop-index.html:12
+msgid "Shop App"
+msgstr "Приложение Магазин"
+
+#: shopapp/templates/shopapp/shop-index.html:14
+#, python-format
+msgid ""
+"\n"
+"        <h2>Welcome, %(name)s!</h2>\n"
+"    "
+msgstr ""
+"\n"
+"        <h2>Добро пожаловать, %(name)s!</h2>\n"
+"    "
+
+#: shopapp/templates/shopapp/shop-index.html:18
+msgid "Today"
+msgstr "Сегодня"
+
+#: shopapp/templates/shopapp/shop-index.html:20
+msgid "Available pages"
+msgstr "Доступные страницы"
+
+#: shopapp/templates/shopapp/shop-index.html:32
+#, python-format
+msgid ""
+"\n"
+"                    You have %(count)s cherry\n"
+"                "
+msgid_plural ""
+"\n"
+"                    You have %(count)s cherries\n"
+"                "
+msgstr[0] ""
+"\n"
+"                    У Вас %(count)s вишня\n"
+"                "
+msgstr[1] ""
+"\n"
+"                    У Вас %(count)s вишни\n"
+"                "
+msgstr[2] ""
+"\n"
+"                    У Вас %(count)s вишен\n"
+"                "
+
+#: shopapp/templates/shopapp/shop-index.html:41
+msgid "Shop description"
+msgstr "Описание магазина"
+
+#: shopapp/templates/shopapp/user_orders_list.html:7
+msgid "User orders"
+msgstr "Заказы пользователя"
+
+#: shopapp/templates/shopapp/user_orders_list.html:11
+msgid "Orders of user"
+msgstr "Заказы пользователя"
+
+#: shopapp/templates/shopapp/user_orders_list.html:14
+msgid "User ID"
+msgstr "ID пользователя"
+
+#: shopapp/templates/shopapp/user_orders_list.html:17
+msgid "Full name"
+msgstr "Полное имя"
+
+#: shopapp/templates/shopapp/user_orders_list.html:29
+#, python-format
+msgid ""
+"\n"
+"                    User %(name)s has the following orders:\n"
+"                "
+msgstr ""
+"\n"
+"                    Пользователь %(name)s выполнил следующие заказы:\n"
+"                "
+
+#: shopapp/templates/shopapp/user_orders_list.html:44
+msgid "No products"
+msgstr "Товары отсутствуют"
+
+#: shopapp/templates/shopapp/user_orders_list.html:49
+msgid "View details"
+msgstr "Просмотр подробной информации"
+
+#: shopapp/templates/shopapp/user_orders_list.html:56
+msgid "Total orders"
+msgstr "Всего заказов"
+
+#: shopapp/templates/shopapp/user_orders_list.html:59
+#, python-format
+msgid ""
+"\n"
+"                    User %(name)s has no orders yet.\n"
+"                "
+msgstr ""
+"\n"
+"                    У пользователя %(name)s ещё нет заказов.\n"
+"                "
+
+#: shopapp/templates/shopapp/user_orders_list.html:68
+msgid "Export orders as JSON"
+msgstr "Экспортировать заказы в JSON"
+
+#: shopapp/templates/shopapp/user_orders_list.html:74
+msgid "Back to all orders"
+msgstr "Вернуться ко всем заказам"

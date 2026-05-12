@@ -1,0 +1,90 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$Cy5cq6oph8LnUZ75Z0PCU9$XoVjSS0XbDFDBZbk2/5Z0YQe83IpckCNLPN0QCdQDvg=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-04-06T09:05:52.655Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "shopapp.product",
+  "pk": 1,
+  "fields": {
+    "name": "Ноутбук",
+    "description": "Мощный игровой ноутбук с процессором Intel Core i7, видеокартой RTX 4060 и 16 ГБ оперативной памяти",
+    "price": "75000.00",
+    "discount": 5,
+    "created_at": "2026-04-06T09:05:56.996Z",
+    "archived": true,
+    "created_by": null
+  }
+},
+{
+  "model": "shopapp.product",
+  "pk": 2,
+  "fields": {
+    "name": "Смартфон",
+    "description": "Флагман с отличной камерой",
+    "price": "45000.00",
+    "discount": 10,
+    "created_at": "2026-04-06T09:05:57.001Z",
+    "archived": false,
+    "created_by": null
+  }
+},
+{
+  "model": "shopapp.product",
+  "pk": 3,
+  "fields": {
+    "name": "Наушники",
+    "description": "Беспроводные, шумоподавление",
+    "price": "5000.00",
+    "discount": 0,
+    "created_at": "2026-04-06T09:05:57.005Z",
+    "archived": false,
+    "created_by": null
+  }
+},
+{
+  "model": "shopapp.product",
+  "pk": 4,
+  "fields": {
+    "name": "Клавиатура",
+    "description": "Механическая, RGB подсветка",
+    "price": "3500.00",
+    "discount": 15,
+    "created_at": "2026-04-06T09:05:57.008Z",
+    "archived": true,
+    "created_by": null
+  }
+},
+{
+  "model": "shopapp.order",
+  "pk": 1,
+  "fields": {
+    "delivery_address": "ул. Победы, д.6",
+    "promocode": "SALE123",
+    "created_at": "2026-04-06T09:06:00.918Z",
+    "user": 1,
+    "created_by": null,
+    "updated_by": null,
+    "products": [
+      4,
+      3,
+      1,
+      2
+    ]
+  }
+}
+]

@@ -1,0 +1,77 @@
+{% extends "shopapp/base.html" %}
+
+{% load i18n %}
+{% load cache %}
+
+{% block title %}
+    {% translate "User orders" %} - {{ owner.username }}
+{% endblock %}
+
+{% block content %}
+    <h1>{% translate "Orders of user" %}: {{ owner.username }}</h1>
+
+    <div>
+        <p><strong>{% translate "User ID" %}:</strong> {{ owner.pk }}</p>
+        <p><strong>{% translate "Username" %}:</strong> {{ owner.username }}</p>
+        {% if owner.first_name or owner.last_name %}
+            <p><strong>{% translate "Full name" %}:</strong> {{ owner.first_name }} {{ owner.last_name }}</p>
+        {% endif %}
+        {% if owner.email %}
+            <p><strong>{% translate "Email" %}:</strong> {{ owner.email }}</p>
+        {% endif %}
+    </div>
+
+    <hr>
+
+    {% cache 300 user_orders owner.pk %}
+        {% if orders %}
+            <h2>
+                {% blocktranslate with name=owner.username %}
+                    User {{ name }} has the following orders:
+                {% endblocktranslate %}
+            </h2>
+
+            {% for order in orders %}
+                <div>
+                    <p><strong>{% translate "Order" %} #{{ order.pk }}</strong></p>
+                    <p>{% translate "Delivery address" %}: {{ order.delivery_address }}</p>
+                    <p>{% translate "Promocode" %}: {{ order.promocode|default:"-" }}</p>
+                    <p>{% translate "Created at" %}: {{ order.created_at|date:"d.m.Y H:i" }}</p>
+                    <p>{% translate "Products" %}:
+                        {% for product in order.products.all %}
+                            {{ product.name }}{% if not forloop.last %}, {% endif %}
+                        {% empty %}
+                            {% translate "No products" %}
+                        {% endfor %}
+                    </p>
+                    <p>
+                        <a href="{% url 'shopapp:order_detail' pk=order.pk %}">
+                            {% translate "View details" %}
+                        </a>
+                    </p>
+                </div>
+                <hr>
+            {% endfor %}
+
+            <p><strong>{% translate "Total orders" %}:</strong> {{ orders|length }}</p>
+        {% else %}
+            <h2>
+                {% blocktranslate with name=owner.username %}
+                    User {{ name }} has no orders yet.
+                {% endblocktranslate %}
+            </h2>
+        {% endif %}
+    {% endcache %}
+
+    <p>
+        <a href="{% url 'shopapp:user_orders_export' user_id=owner.pk %}">
+            {% translate "Export orders as JSON" %}
+        </a>
+    </p>
+
+    <p>
+        <a href="{% url 'shopapp:orders_list' %}">
+            {% translate "Back to all orders" %}
+        </a>
+    </p>
+{% endblock %}

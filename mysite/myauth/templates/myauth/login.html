@@ -1,0 +1,16 @@
+{% extends 'myauth/base.html' %}
+
+{% load i18n %}
+
+{% block title %}
+    {% translate "Login" %}
+{% endblock %}
+
+{% block content %}
+    <h1>{% translate "Login" %}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">{% translate "Login" %}</button>
+    </form>
+{% endblock %}

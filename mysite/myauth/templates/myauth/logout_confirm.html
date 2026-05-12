@@ -1,0 +1,22 @@
+{% extends 'myauth/base.html' %}
+
+{% load i18n %}
+
+{% block title %}
+    {% translate "Logout" %}
+{% endblock %}
+
+{% block content %}
+    <h1>{% translate "Logout" %}</h1>
+
+    <p>{% translate "Are you sure you want to logout?" %}</p>
+
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">{% translate "Yes, logout" %}</button>
+    </form>
+
+    <div>
+        <a href="{% url 'myauth:login' %}">{% translate "Cancel" %}</a>
+    </div>
+{% endblock %}

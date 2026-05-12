@@ -1,0 +1,26 @@
+{% extends 'shopapp/base.html' %}
+
+{% load i18n %}
+
+{% block title %}
+    {% translate "Confirm archive" %} {{ object.name }}
+{% endblock %}
+
+{% block content %}
+    {% blocktranslate with name=object.name %}
+        <h1>Are you sure you want to archive {{ name }}?</h1>
+    {% endblocktranslate %}
+    <div>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">{% translate "Archive" %}</button>
+        </form>
+    </div>
+
+    <div>
+        <a href="{% url 'shopapp:product_details' pk=object.pk %}">
+            {% translate "Return to product" %} #{{ object.pk }}
+        </a>
+    </div>
+{% endblock %}

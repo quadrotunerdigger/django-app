@@ -1,0 +1,781 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-09 08:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: blogapp/models.py:12 blogapp/models.py:49
+#: blogapp/templates/blogapp/article_detail.html:12
+#: blogapp/templates/blogapp/article_list.html:23
+msgid "Author"
+msgstr "Author"
+
+#: blogapp/models.py:13
+msgid "Authors"
+msgstr "Authors"
+
+#: blogapp/models.py:23 blogapp/models.py:55
+#: blogapp/templates/blogapp/article_detail.html:17
+#: blogapp/templates/blogapp/article_list.html:28
+msgid "Category"
+msgstr "Category"
+
+#: blogapp/models.py:24
+msgid "Categories"
+msgstr "Categories"
+
+#: blogapp/models.py:34
+msgid "Tag"
+msgstr "Tag"
+
+#: blogapp/models.py:35 blogapp/models.py:60
+#: blogapp/templates/blogapp/article_detail.html:22
+#: blogapp/templates/blogapp/article_list.html:31
+msgid "Tags"
+msgstr "Tags"
+
+#: blogapp/models.py:42
+msgid "Title"
+msgstr "Title"
+
+#: blogapp/models.py:43 blogapp/templates/blogapp/article_detail.html:31
+msgid "Content"
+msgstr "Content"
+
+#: blogapp/models.py:44 blogapp/templates/blogapp/article_detail.html:18
+#: blogapp/templates/blogapp/article_list.html:21
+msgid "Publication date"
+msgstr "Publication date"
+
+#: blogapp/models.py:64
+msgid "Article"
+msgstr "Article"
+
+#: blogapp/models.py:65
+msgid "Articles"
+msgstr "Articles"
+
+#: blogapp/templates/blogapp/article_detail.html:26
+#: blogapp/templates/blogapp/article_list.html:35
+msgid "No tags"
+msgstr "No tags"
+
+#: blogapp/templates/blogapp/article_detail.html:36
+#: blogapp/templates/blogapp/author_detail.html:36
+msgid "Back to articles list"
+msgstr "Back to articles list"
+
+#: blogapp/templates/blogapp/article_list.html:6
+#: blogapp/templates/blogapp/article_list.html:10
+msgid "Articles list"
+msgstr "Articles list"
+
+#: blogapp/templates/blogapp/article_list.html:41
+#: blogapp/templates/blogapp/author_detail.html:31
+msgid "No articles yet."
+msgstr "No articles yet."
+
+#: blogapp/templates/blogapp/author_detail.html:12
+msgid "Biography"
+msgstr "Biography"
+
+#: blogapp/templates/blogapp/author_detail.html:18
+msgid "Author's articles"
+msgstr "Author's articles"
+
+#: myauth/forms.py:26
+#, python-format
+msgid "Only JPEG, PNG, WebP are allowed. Received type: %(mime)s"
+msgstr "Only JPEG, PNG, WebP are allowed. Received type: %(mime)s"
+
+#: myauth/forms.py:31
+#, python-format
+msgid "Avatar must not exceed %(size)s MB"
+msgstr "Avatar must not exceed %(size)s MB"
+
+#: myauth/models.py:17
+msgid "Profile"
+msgstr "Profile"
+
+#: myauth/models.py:18
+msgid "Profiles"
+msgstr "Profiles"
+
+#: myauth/models.py:20 myauth/templates/myauth/user-details.html:6
+#: myauth/templates/myauth/user-details.html:10 shopapp/models.py:110
+msgid "User"
+msgstr "User"
+
+#: myauth/models.py:21 myauth/templates/myauth/about-me.html:23
+#: myauth/templates/myauth/user-details.html:17
+msgid "Bio"
+msgstr "Bio"
+
+#: myauth/models.py:22
+msgid "Agreement accepted"
+msgstr "Agreement accepted"
+
+#: myauth/models.py:27 myauth/templates/myauth/about-me.html:27
+#: myauth/templates/myauth/about-me.html:28
+#: myauth/templates/myauth/profile_update.html:15
+#: myauth/templates/myauth/user-details.html:21
+#: myauth/templates/myauth/user-details.html:22
+msgid "Avatar"
+msgstr "Avatar"
+
+#: myauth/models.py:33
+msgid "Avatar must not exceed 2 MB"
+msgstr "Avatar must not exceed 2 MB"
+
+#: myauth/templates/myauth/about-me.html:7
+msgid "About me"
+msgstr "About me"
+
+#: myauth/templates/myauth/about-me.html:11
+msgid "User info"
+msgstr "User info"
+
+#: myauth/templates/myauth/about-me.html:17
+#: shopapp/templates/shopapp/order_list.html:15
+msgid "Details"
+msgstr "Details"
+
+#: myauth/templates/myauth/about-me.html:18
+#: shopapp/templates/shopapp/user_orders_list.html:15
+msgid "Username"
+msgstr "Username"
+
+#: myauth/templates/myauth/about-me.html:19
+#: myauth/templates/myauth/user-details.html:12
+msgid "First name"
+msgstr "First name"
+
+#: myauth/templates/myauth/about-me.html:20
+#: myauth/templates/myauth/user-details.html:13
+msgid "Last name"
+msgstr "Last name"
+
+#: myauth/templates/myauth/about-me.html:21
+#: myauth/templates/myauth/user-details.html:14
+#: shopapp/templates/shopapp/user_orders_list.html:20
+msgid "Email"
+msgstr "Email"
+
+#: myauth/templates/myauth/about-me.html:31
+msgid "No avatar uploaded"
+msgstr "No avatar uploaded"
+
+#: myauth/templates/myauth/about-me.html:36
+msgid "Edit my profile"
+msgstr "Edit my profile"
+
+#: myauth/templates/myauth/about-me.html:43
+msgid "User is anonymous"
+msgstr "User is anonymous"
+
+#: myauth/templates/myauth/login.html:6 myauth/templates/myauth/login.html:10
+#: myauth/templates/myauth/login.html:14
+msgid "Login"
+msgstr "Login"
+
+#: myauth/templates/myauth/logout_confirm.html:6
+#: myauth/templates/myauth/logout_confirm.html:10
+msgid "Logout"
+msgstr "Logout"
+
+#: myauth/templates/myauth/logout_confirm.html:12
+msgid "Are you sure you want to logout?"
+msgstr "Are you sure you want to logout?"
+
+#: myauth/templates/myauth/logout_confirm.html:16
+msgid "Yes, logout"
+msgstr "Yes, logout"
+
+#: myauth/templates/myauth/logout_confirm.html:20
+#: shopapp/templates/shopapp/order_confirm_delete.html:30
+msgid "Cancel"
+msgstr "Cancel"
+
+#: myauth/templates/myauth/profile_update.html:6
+#: myauth/templates/myauth/profile_update.html:10
+msgid "Update Profile"
+msgstr "Update Profile"
+
+#: myauth/templates/myauth/profile_update.html:14
+msgid "Current avatar"
+msgstr "Current avatar"
+
+#: myauth/templates/myauth/profile_update.html:22
+#: shopapp/templates/shopapp/order_update_form.html:15
+#: shopapp/templates/shopapp/product_update_form.html:15
+msgid "Update"
+msgstr "Update"
+
+#: myauth/templates/myauth/profile_update.html:26
+msgid "Back to About me"
+msgstr "Back to About me"
+
+#: myauth/templates/myauth/register.html:6
+#: myauth/templates/myauth/register.html:10
+#: myauth/templates/myauth/register.html:21
+msgid "Register"
+msgstr "Register"
+
+#: myauth/templates/myauth/user-details.html:25
+msgid "No avatar"
+msgstr "No avatar"
+
+#: myauth/templates/myauth/user-details.html:31
+msgid "Edit profile"
+msgstr "Edit profile"
+
+#: myauth/templates/myauth/user-details.html:38
+msgid "Back to users list"
+msgstr "Back to users list"
+
+#: myauth/templates/myauth/users-list.html:6
+msgid "Users List"
+msgstr "Users List"
+
+#: myauth/templates/myauth/users-list.html:10
+msgid "Users"
+msgstr "Users"
+
+#: myauth/templates/myauth/users-list.html:25
+msgid "No users yet"
+msgstr "No users yet"
+
+#: myauth/views.py:22
+msgid "welcome hello world"
+msgstr "Welcome! Hello world!"
+
+#: myauth/views.py:28
+#, python-brace-format
+msgid "one product"
+msgid_plural "{count} products"
+msgstr[0] "One product"
+msgstr[1] "{count} products"
+
+#: mysite/settings.py:181
+msgid "English"
+msgstr "English"
+
+#: mysite/settings.py:182
+msgid "Russian"
+msgstr "Russian"
+
+#: shopapp/forms.py:24
+#, python-format
+msgid "File size must not exceed %(size)s MB. Current size: %(current).2f MB"
+msgstr "File size must not exceed %(size)s MB. Current size: %(current).2f MB"
+
+#: shopapp/forms.py:40
+#, python-format
+msgid "Only CSV files are allowed. Received type: %(mime)s"
+msgstr "Only CSV files are allowed. Received type: %(mime)s"
+
+#: shopapp/forms.py:52
+#, python-format
+msgid "Only images are allowed: JPEG, PNG, WebP, GIF. Received type: %(mime)s"
+msgstr "Only images are allowed: JPEG, PNG, WebP, GIF. Received type: %(mime)s"
+
+#: shopapp/forms.py:57
+#, python-format
+msgid "Image must not exceed %(size)s MB"
+msgstr "Image must not exceed %(size)s MB"
+
+#: shopapp/forms.py:87 shopapp/templates/shopapp/product-details.html:27
+msgid "Images"
+msgstr "Images"
+
+#: shopapp/forms.py:106
+msgid "CSV file"
+msgstr "CSV file"
+
+#: shopapp/forms.py:111
+#, python-format
+msgid "Max file size: %(size)s MB. Format: CSV"
+msgstr "Max file size: %(size)s MB. Format: CSV"
+
+#: shopapp/forms.py:132
+#, python-format
+msgid "Only PDF and images are allowed. Received type: %(mime)s"
+msgstr "Only PDF and images are allowed. Received type: %(mime)s"
+
+#: shopapp/forms.py:136
+#, python-format
+msgid "File must not exceed %(size)s MB"
+msgstr "File must not exceed %(size)s MB"
+
+#: shopapp/forms.py:143
+msgid "CSV file with orders"
+msgstr "CSV file with orders"
+
+#: shopapp/forms.py:148
+#, python-format
+msgid ""
+"Format: user_id,delivery_address,promocode,product_ids. Max size: %(size)s MB"
+msgstr ""
+"Format: user_id,delivery_address,promocode,product_ids. Max size: %(size)s MB"
+
+#: shopapp/models.py:28 shopapp/models.py:89
+#: shopapp/templates/shopapp/product-details.html:6
+msgid "Product"
+msgstr "Product"
+
+#: shopapp/models.py:29 shopapp/models.py:111
+#: shopapp/templates/shopapp/order_confirm_delete.html:15
+#: shopapp/templates/shopapp/products-list.html:10
+#: shopapp/templates/shopapp/user_orders_list.html:40
+msgid "Products"
+msgstr "Products"
+
+#: shopapp/models.py:36
+msgid "Name"
+msgstr "Name"
+
+#: shopapp/models.py:37 shopapp/models.py:91
+#: shopapp/templates/shopapp/product-details.html:15
+msgid "Description"
+msgstr "Description"
+
+#: shopapp/models.py:45 shopapp/templates/shopapp/product-details.html:16
+#: shopapp/templates/shopapp/products-list.html:30
+msgid "Price"
+msgstr "Price"
+
+#: shopapp/models.py:53 shopapp/templates/shopapp/product-details.html:17
+#: shopapp/templates/shopapp/products-list.html:32
+msgid "Discount"
+msgstr "Discount"
+
+#: shopapp/models.py:55 shopapp/models.py:109
+#: shopapp/templates/shopapp/user_orders_list.html:39
+msgid "Created at"
+msgstr "Created at"
+
+#: shopapp/models.py:56 shopapp/templates/shopapp/product-details.html:18
+msgid "Archived"
+msgstr "Archived"
+
+#: shopapp/models.py:57 shopapp/templates/shopapp/product-details.html:22
+msgid "Preview"
+msgstr "Preview"
+
+#: shopapp/models.py:64 shopapp/models.py:119
+msgid "Created by"
+msgstr "Created by"
+
+#: shopapp/models.py:70 shopapp/models.py:96
+msgid "Image must not exceed 5 MB"
+msgstr "Image must not exceed 5 MB"
+
+#: shopapp/models.py:86
+msgid "Product Image"
+msgstr "Product Image"
+
+#: shopapp/models.py:87
+msgid "Product Images"
+msgstr "Product Images"
+
+#: shopapp/models.py:90
+msgid "Image"
+msgstr "Image"
+
+#: shopapp/models.py:100 shopapp/templates/shopapp/order_detail.html:6
+#: shopapp/templates/shopapp/order_detail.html:10
+#: shopapp/templates/shopapp/user_orders_list.html:36
+msgid "Order"
+msgstr "Order"
+
+#: shopapp/models.py:101 shopapp/templates/shopapp/order_list.html:10
+msgid "Orders"
+msgstr "Orders"
+
+#: shopapp/models.py:107 shopapp/templates/shopapp/order_detail.html:14
+#: shopapp/templates/shopapp/order_list.html:18
+#: shopapp/templates/shopapp/user_orders_list.html:37
+msgid "Delivery address"
+msgstr "Delivery address"
+
+#: shopapp/models.py:108 shopapp/templates/shopapp/order_detail.html:13
+#: shopapp/templates/shopapp/order_list.html:17
+#: shopapp/templates/shopapp/user_orders_list.html:38
+msgid "Promocode"
+msgstr "Promocode"
+
+#: shopapp/models.py:112
+msgid "Receipt"
+msgstr "Receipt"
+
+#: shopapp/models.py:126
+msgid "Updated by"
+msgstr "Updated by"
+
+#: shopapp/models.py:132
+msgid "File must not exceed 10 MB"
+msgstr "File must not exceed 10 MB"
+
+#: shopapp/templates/admin/csv_form.html:6
+#: shopapp/templates/admin/csv_form.html:10
+#: shopapp/templates/shopapp/orders_changelist.html:8
+#: shopapp/templates/shopapp/products_changelist.html:8
+msgid "Import CSV"
+msgstr "Import CSV"
+
+#: shopapp/templates/admin/csv_form.html:16
+msgid "Upload CSV"
+msgstr "Upload CSV"
+
+#: shopapp/templates/shopapp/groups-list.html:6
+msgid "Groups List"
+msgstr "Groups List"
+
+#: shopapp/templates/shopapp/groups-list.html:10
+msgid "Groups"
+msgstr "Groups"
+
+#: shopapp/templates/shopapp/groups-list.html:15
+#: shopapp/templates/shopapp/order_form.html:15
+#: shopapp/templates/shopapp/product_form.html:15
+msgid "Create"
+msgstr "Create"
+
+#: shopapp/templates/shopapp/groups-list.html:21
+msgid "No groups yet"
+msgstr "No groups yet"
+
+#: shopapp/templates/shopapp/order_confirm_delete.html:6
+#: shopapp/templates/shopapp/order_detail.html:33
+msgid "Delete order"
+msgstr "Delete order"
+
+#: shopapp/templates/shopapp/order_confirm_delete.html:10
+#, python-format
+msgid ""
+"\n"
+"        <h1>Are you sure you want to delete order #%(pk)s?</h1>\n"
+"    "
+msgstr ""
+"\n"
+"        <h1>Are you sure you want to delete order #%(pk)s?</h1>\n"
+"    "
+
+#: shopapp/templates/shopapp/order_confirm_delete.html:14
+#: shopapp/templates/shopapp/order_detail.html:12
+#: shopapp/templates/shopapp/order_list.html:16
+msgid "Order by"
+msgstr "Order by"
+
+#: shopapp/templates/shopapp/order_confirm_delete.html:24
+msgid "Yes, delete"
+msgstr "Yes, delete"
+
+#: shopapp/templates/shopapp/order_detail.html:6
+msgid "details"
+msgstr "details"
+
+#: shopapp/templates/shopapp/order_detail.html:16
+#: shopapp/templates/shopapp/order_list.html:20
+msgid "Products in order"
+msgstr "Products in order"
+
+#: shopapp/templates/shopapp/order_detail.html:19
+#: shopapp/templates/shopapp/order_list.html:23
+msgid "rub."
+msgstr "rub."
+
+#: shopapp/templates/shopapp/order_detail.html:27
+#: shopapp/templates/shopapp/order_update_form.html:6
+#: shopapp/templates/shopapp/order_update_form.html:10
+msgid "Update order"
+msgstr "Update order"
+
+#: shopapp/templates/shopapp/order_detail.html:39
+#: shopapp/templates/shopapp/order_form.html:21
+msgid "Return to orders list"
+msgstr "Return to orders list"
+
+#: shopapp/templates/shopapp/order_form.html:6
+#: shopapp/templates/shopapp/order_form.html:10
+msgid "Create order"
+msgstr "Create order"
+
+#: shopapp/templates/shopapp/order_list.html:6
+msgid "Orders list"
+msgstr "Orders list"
+
+#: shopapp/templates/shopapp/order_list.html:32
+msgid "No orders yet"
+msgstr "No orders yet"
+
+#: shopapp/templates/shopapp/order_list.html:37
+msgid "Create a new order"
+msgstr "Create a new order"
+
+#: shopapp/templates/shopapp/order_update_form.html:21
+msgid "Return to order"
+msgstr "Return to order"
+
+#: shopapp/templates/shopapp/orders_changelist.html:13
+#: shopapp/templates/shopapp/products_changelist.html:13
+msgid "Export CSV"
+msgstr "Export CSV"
+
+#: shopapp/templates/shopapp/product-details.html:10
+#, python-format
+msgid ""
+"\n"
+"        <h1>Product <strong>%(name)s</strong></h1>\n"
+"    "
+msgstr ""
+"\n"
+"        <h1>Product <strong>%(name)s</strong></h1>\n"
+"    "
+
+#: shopapp/templates/shopapp/product-details.html:30
+#, python-format
+msgid ""
+"\n"
+"                    %(count)s image available\n"
+"                "
+msgid_plural ""
+"\n"
+"                    %(count)s images available\n"
+"                "
+msgstr[0] ""
+"\n"
+"                    %(count)s image available\n"
+"                "
+msgstr[1] ""
+"\n"
+"                    %(count)s images available\n"
+"                "
+
+#: shopapp/templates/shopapp/product-details.html:47
+msgid "No images uploaded yet"
+msgstr "No images uploaded yet"
+
+#: shopapp/templates/shopapp/product-details.html:54
+#: shopapp/templates/shopapp/product_update_form.html:6
+#: shopapp/templates/shopapp/product_update_form.html:10
+msgid "Update product"
+msgstr "Update product"
+
+#: shopapp/templates/shopapp/product-details.html:60
+msgid "Archive product"
+msgstr "Archive product"
+
+#: shopapp/templates/shopapp/product-details.html:66
+#: shopapp/templates/shopapp/product_form.html:21
+msgid "Return to products list"
+msgstr "Return to products list"
+
+#: shopapp/templates/shopapp/product_confirm_delete.html:6
+msgid "Confirm archive"
+msgstr "Confirm archive"
+
+#: shopapp/templates/shopapp/product_confirm_delete.html:10
+#, python-format
+msgid ""
+"\n"
+"        <h1>Are you sure you want to archive %(name)s?</h1>\n"
+"    "
+msgstr ""
+"\n"
+"        <h1>Are you sure you want to archive %(name)s?</h1>\n"
+"    "
+
+#: shopapp/templates/shopapp/product_confirm_delete.html:17
+msgid "Archive"
+msgstr "Archive"
+
+#: shopapp/templates/shopapp/product_confirm_delete.html:23
+#: shopapp/templates/shopapp/product_update_form.html:21
+msgid "Return to product"
+msgstr "Return to product"
+
+#: shopapp/templates/shopapp/product_form.html:6
+#: shopapp/templates/shopapp/product_form.html:10
+msgid "Create product"
+msgstr "Create product"
+
+#: shopapp/templates/shopapp/products-list.html:6
+msgid "Products list"
+msgstr "Products list"
+
+#: shopapp/templates/shopapp/products-list.html:14
+#, python-format
+msgid ""
+"\n"
+"            There is only one product:\n"
+"            "
+msgid_plural ""
+"\n"
+"            There are %(product_count)s products:\n"
+"        "
+msgstr[0] ""
+"\n"
+"            There is only one product:\n"
+"            "
+msgstr[1] ""
+"\n"
+"            There are %(product_count)s products:\n"
+"        "
+
+#: shopapp/templates/shopapp/products-list.html:25
+msgctxt "product name"
+msgid "Name"
+msgstr "Name"
+
+#: shopapp/templates/shopapp/products-list.html:31
+msgid "no discount"
+msgstr "no discount"
+
+#: shopapp/templates/shopapp/products-list.html:45
+msgid "No products yet"
+msgstr "No products yet"
+
+#: shopapp/templates/shopapp/products-list.html:50
+#, python-format
+msgid ""
+"\n"
+"            <div>\n"
+"                <a href=\"%(product_create_url)s\">\n"
+"                    Create a new product\n"
+"                </a>\n"
+"            </div>\n"
+"        "
+msgstr ""
+"\n"
+"            <div>\n"
+"                <a href=\"%(product_create_url)s\">\n"
+"                    Create a new product\n"
+"                </a>\n"
+"            </div>\n"
+"        "
+
+#: shopapp/templates/shopapp/shop-index.html:7
+msgid "Home - Shop"
+msgstr "Home - Shop"
+
+#: shopapp/templates/shopapp/shop-index.html:12
+msgid "Shop App"
+msgstr "Shop Application"
+
+#: shopapp/templates/shopapp/shop-index.html:14
+#, python-format
+msgid ""
+"\n"
+"        <h2>Welcome, %(name)s!</h2>\n"
+"    "
+msgstr ""
+"\n"
+"        <h2>Welcome, %(name)s!</h2>\n"
+"    "
+
+#: shopapp/templates/shopapp/shop-index.html:18
+msgid "Today"
+msgstr "Today"
+
+#: shopapp/templates/shopapp/shop-index.html:20
+msgid "Available pages"
+msgstr "Available pages"
+
+#: shopapp/templates/shopapp/shop-index.html:32
+#, python-format
+msgid ""
+"\n"
+"                    You have %(count)s cherry\n"
+"                "
+msgid_plural ""
+"\n"
+"                    You have %(count)s cherries\n"
+"                "
+msgstr[0] ""
+"\n"
+"                You have %(count)s cherry\n"
+"            "
+msgstr[1] ""
+"\n"
+"                You have %(count)s cherries\n"
+"            "
+msgstr[2] ""
+"\n"
+"                You have %(count)s cherries\n"
+"            "
+
+#: shopapp/templates/shopapp/shop-index.html:41
+msgid "Shop description"
+msgstr "Shop description"
+
+#: shopapp/templates/shopapp/user_orders_list.html:7
+msgid "User orders"
+msgstr "User orders"
+
+#: shopapp/templates/shopapp/user_orders_list.html:11
+msgid "Orders of user"
+msgstr "Orders of user"
+
+#: shopapp/templates/shopapp/user_orders_list.html:14
+msgid "User ID"
+msgstr "User ID"
+
+#: shopapp/templates/shopapp/user_orders_list.html:17
+msgid "Full name"
+msgstr "Full name"
+
+#: shopapp/templates/shopapp/user_orders_list.html:29
+#, python-format
+msgid ""
+"\n"
+"                    User %(name)s has the following orders:\n"
+"                "
+msgstr ""
+"\n"
+"                    User %(name)s has the following orders:\n"
+"                "
+
+#: shopapp/templates/shopapp/user_orders_list.html:44
+msgid "No products"
+msgstr "No products"
+
+#: shopapp/templates/shopapp/user_orders_list.html:49
+msgid "View details"
+msgstr "View details"
+
+#: shopapp/templates/shopapp/user_orders_list.html:56
+msgid "Total orders"
+msgstr "Total orders"
+
+#: shopapp/templates/shopapp/user_orders_list.html:59
+#, python-format
+msgid ""
+"\n"
+"                    User %(name)s has no orders yet.\n"
+"                "
+msgstr ""
+"\n"
+"                    User %(name)s has no orders yet.\n"
+"                "
+
+#: shopapp/templates/shopapp/user_orders_list.html:68
+msgid "Export orders as JSON"
+msgstr "Export orders as JSON"
+
+#: shopapp/templates/shopapp/user_orders_list.html:74
+msgid "Back to all orders"
+msgstr "Back to all orders"

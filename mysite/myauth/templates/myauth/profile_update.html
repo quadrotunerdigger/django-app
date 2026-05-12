@@ -1,0 +1,28 @@
+{% extends 'myauth/base.html' %}
+
+{% load i18n %}
+
+{% block title %}
+    {% translate "Update Profile" %}
+{% endblock %}
+
+{% block content %}
+    <h1>{% translate "Update Profile" %}</h1>
+
+    {% if object.avatar %}
+        <div>
+            <p>{% translate "Current avatar" %}:</p>
+            <img src="{{ object.avatar.url }}" alt="{% translate 'Avatar' %}" style="max-width: 200px;">
+        </div>
+    {% endif %}
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">{% translate "Update" %}</button>
+    </form>
+
+    <div>
+        <a href="{% url 'myauth:about-me' %}">{% translate "Back to About me" %}</a>
+    </div>
+{% endblock %}

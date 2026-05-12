@@ -1,0 +1,40 @@
+{% extends 'myauth/base.html' %}
+
+{% load i18n %}
+
+{% block title %}
+    {% translate "User" %} {{ user_obj.username }}
+{% endblock %}
+
+{% block content %}
+    <h1>{% translate "User" %}: {{ user_obj.username }}</h1>
+
+    <p>{% translate "First name" %}: {{ user_obj.first_name }}</p>
+    <p>{% translate "Last name" %}: {{ user_obj.last_name }}</p>
+    <p>{% translate "Email" %}: {{ user_obj.email }}</p>
+
+    {% if user_obj.profile %}
+        <p>{% translate "Bio" %}: {{ user_obj.profile.bio }}</p>
+
+        {% if user_obj.profile.avatar %}
+            <div>
+                <p>{% translate "Avatar" %}:</p>
+                <img src="{{ user_obj.profile.avatar.url }}" alt="{% translate 'Avatar' %}" style="max-width: 200px;">
+            </div>
+        {% else %}
+            <p>{% translate "No avatar" %}</p>
+        {% endif %}
+
+        {% if can_edit %}
+            <div>
+                <a href="{% url 'myauth:profile-update' pk=user_obj.profile.pk %}">
+                    {% translate "Edit profile" %}
+                </a>
+            </div>
+        {% endif %}
+    {% endif %}
+
+    <div>
+        <a href="{% url 'myauth:users-list' %}">{% translate "Back to users list" %}</a>
+    </div>
+{% endblock %}

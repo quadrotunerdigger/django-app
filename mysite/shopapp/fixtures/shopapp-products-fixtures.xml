@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+    <object model="shopapp.product" pk="1">
+        <field name="name" type="CharField">Ноутбук</field>
+        <field name="description" type="TextField">Мощный игровой ноутбук с процессором Intel Core i7, видеокартой RTX
+            4060 и 16 ГБ оперативной памяти
+        </field>
+        <field name="price" type="DecimalField">75000.00</field>
+        <field name="discount" type="PositiveSmallIntegerField">5</field>
+        <field name="created_at" type="DateTimeField">2026-05-01T09:07:35.872749+00:00</field>
+        <field name="archived" type="BooleanField">False</field>
+        <field name="preview" type="FileField"></field>
+        <field name="created_by" rel="ManyToOneRel" to="auth.user">
+            <None></None>
+        </field>
+    </object>
+    <object model="shopapp.product" pk="2">
+        <field name="name" type="CharField">Смартфон</field>
+        <field name="description" type="TextField">Флагман с отличной камерой</field>
+        <field name="price" type="DecimalField">45000.00</field>
+        <field name="discount" type="PositiveSmallIntegerField">10</field>
+        <field name="created_at" type="DateTimeField">2026-05-01T09:07:35.874534+00:00</field>
+        <field name="archived" type="BooleanField">False</field>
+        <field name="preview" type="FileField"></field>
+        <field name="created_by" rel="ManyToOneRel" to="auth.user">
+            <None></None>
+        </field>
+    </object>
+    <object model="shopapp.product" pk="3">
+        <field name="name" type="CharField">Наушники</field>
+        <field name="description" type="TextField">Беспроводные, шумоподавление</field>
+        <field name="price" type="DecimalField">5000.00</field>
+        <field name="discount" type="PositiveSmallIntegerField">0</field>
+        <field name="created_at" type="DateTimeField">2026-05-01T09:07:35.875828+00:00</field>
+        <field name="archived" type="BooleanField">False</field>
+        <field name="preview" type="FileField"></field>
+        <field name="created_by" rel="ManyToOneRel" to="auth.user">
+            <None></None>
+        </field>
+    </object>
+    <object model="shopapp.product" pk="4">
+        <field name="name" type="CharField">Клавиатура</field>
+        <field name="description" type="TextField">Механическая, RGB подсветка</field>
+        <field name="price" type="DecimalField">3500.00</field>
+        <field name="discount" type="PositiveSmallIntegerField">15</field>
+        <field name="created_at" type="DateTimeField">2026-05-01T09:07:35.877147+00:00</field>
+        <field name="archived" type="BooleanField">False</field>
+        <field name="preview" type="FileField"></field>
+        <field name="created_by" rel="ManyToOneRel" to="auth.user">
+            <None></None>
+        </field>
+    </object>
+</django-objects>

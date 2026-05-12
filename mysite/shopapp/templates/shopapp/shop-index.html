@@ -1,0 +1,45 @@
+{% extends "shopapp/base.html" %}
+
+{% load i18n %}
+{% load cache %}
+
+{% block title %}
+    {% translate "Home - Shop" %}
+{% endblock %}
+
+{% block content %}
+
+    <h1>{% translate "Shop App" %}</h1>
+
+    {% blocktranslate with name=user_name|title %}
+        <h2>Welcome, {{ name }}!</h2>
+    {% endblocktranslate %}
+
+    <p>{% translate "Today" %}: {{ current_date|date:"d E Y" }}</p>
+
+    <h3>{% translate "Available pages" %}:</h3>
+    <ul>
+        {% for link in links %}
+            <li>
+                <a href="{% url link.url %}">{{ link.name }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+    {% cache 100 count %}
+        <div>
+            <strong>
+                {% blocktranslate count count=items %}
+                    You have {{ count }} cherry
+                {% plural %}
+                    You have {{ count }} cherries
+                {% endblocktranslate %}
+            </strong>
+        </div>
+    {% endcache %}
+
+    <p>{% translate "Shop description" %}: {{ description|truncatewords:10 }}</p>
+
+{% endblock %}
+
+

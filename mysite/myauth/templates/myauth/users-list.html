@@ -1,0 +1,27 @@
+{% extends 'myauth/base.html' %}
+
+{% load i18n %}
+
+{% block title %}
+    {% translate "Users List" %}
+{% endblock %}
+
+{% block content %}
+    <h1>{% translate "Users" %}</h1>
+    {% if users %}
+        <ul>
+            {% for user in users %}
+                <li>
+                    <a href="{% url 'myauth:user-details' pk=user.pk %}">
+                        {{ user.username }}
+                    </a>
+                    {% if user.first_name or user.last_name %}
+                        ({{ user.first_name }} {{ user.last_name }})
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>{% translate "No users yet" %}</p>
+    {% endif %}
+{% endblock %}

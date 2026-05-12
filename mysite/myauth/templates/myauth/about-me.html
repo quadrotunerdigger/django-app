@@ -1,0 +1,45 @@
+{% extends 'myauth/base.html' %}
+
+{% load i18n %}
+{% load cache %}
+
+{% block title %}
+    {% translate "About me" %}
+{% endblock %}
+
+{% block content %}
+    <h1>{% translate "User info" %}</h1>
+    <div>
+        Products available: {% now "u" %}
+    </div>
+    {% if user.is_authenticated %}
+        {% cache 300 userinfo user.username %}
+        <h2>{% translate "Details" %}</h2>
+        <p>{% translate "Username" %}: {{ user.username }}</p>
+        <p>{% translate "First name" %}: {{ user.first_name }}</p>
+        <p>{% translate "Last name" %}: {{ user.last_name }}</p>
+        <p>{% translate "Email" %}: {{ user.email }}</p>
+        {% if user.profile %}
+            <p>{% translate "Bio" %}: {{ user.profile.bio }}</p>
+
+            {% if user.profile.avatar %}
+                <div>
+                    <p>{% translate "Avatar" %}:</p>
+                    <img src="{{ user.profile.avatar.url }}" alt="{% translate 'Avatar' %}" style="max-width: 200px;">
+                </div>
+            {% else %}
+                <p>{% translate "No avatar uploaded" %}</p>
+            {% endif %}
+
+            <div>
+                <a href="{% url 'myauth:profile-update' pk=user.profile.pk %}">
+                    {% translate "Edit my profile" %}
+                </a>
+            </div>
+        {% endif %}
+        {% endcache %}
+
+    {% else %}
+        <h2>{% translate "User is anonymous" %}</h2>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'myauth/base.html' %}
+
+{% load i18n %}
+
+{% block title %}
+    {% translate "Register" %}
+{% endblock %}
+
+{% block content %}
+    <h1>{% translate "Register" %}</h1>
+
+    {% if form.errors %}
+        <div style="color: red;">
+            {{ form.errors }}
+        </div>
+    {% endif %}
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">{% translate "Register" %}</button>
+    </form>
+{% endblock %}

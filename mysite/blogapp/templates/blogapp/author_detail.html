@@ -1,0 +1,38 @@
+{% extends 'blogapp/base.html' %}
+
+{% load i18n %}
+
+{% block title %}{{ author.name }}{% endblock %}
+
+{% block content %}
+    <h1>{{ author.name }}</h1>
+
+    {% if author.bio %}
+        <div>
+            <h2>{% translate "Biography" %}</h2>
+            <p>{{ author.bio|linebreaks }}</p>
+        </div>
+    {% endif %}
+
+    <div>
+        <h2>{% translate "Author's articles" %}</h2>
+        {% if author.articles.all %}
+            <ul>
+                {% for article in author.articles.all %}
+                    <li>
+                        <a href="{% url 'blogapp:article_detail' pk=article.pk %}">
+                            {{ article.title }}
+                        </a>
+                        <span>({{ article.pub_date|date:"d.m.Y" }})</span>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>{% translate "No articles yet." %}</p>
+        {% endif %}
+    </div>
+
+    <p>
+        <a href="{% url 'blogapp:articles_list' %}">{% translate "Back to articles list" %}</a>
+    </p>
+{% endblock %}

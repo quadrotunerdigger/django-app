@@ -1,0 +1,33 @@
+{% extends 'shopapp/base.html' %}
+
+{% load i18n %}
+
+{% block title %}
+    {% translate "Delete order" %} #{{ object.pk }}
+{% endblock %}
+
+{% block content %}
+    {% blocktranslate with pk=object.pk %}
+        <h1>Are you sure you want to delete order #{{ pk }}?</h1>
+    {% endblocktranslate %}
+
+    <p>{% translate "Order by" %}: {% firstof object.user.first_name object.user.username %}</p>
+    <p>{% translate "Products" %}:
+        {% for product in object.products.all %}
+            {{ product.name }}{% if not forloop.last %}, {% endif %}
+        {% endfor %}
+    </p>
+
+    <div>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit">{% translate "Yes, delete" %}</button>
+        </form>
+    </div>
+
+    <div>
+        <a href="{% url 'shopapp:order_detail' pk=object.pk %}">
+            {% translate "Cancel" %}
+        </a>
+    </div>
+{% endblock %}
