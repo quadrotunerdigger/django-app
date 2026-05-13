@@ -1,0 +1,28 @@
+[project]
+name = "django-app"
+version = "0.1.0"
+description = "Django shop application"
+authors = [
+    {name = "IURII_SHMYREV", email = "quadrotuner@bk.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "django (>=6.0.5,<7.0.0)",
+    "djangorestframework (>=3.17.1,<4.0.0)",
+    "django-filter (>=25.2,<26.0)",
+    "django-debug-toolbar (>=6.3.0,<7.0.0)",
+    "pillow (>=12.2.0,<13.0.0)",
+    "gunicorn (>=26.0.0,<27.0.0)",
+    "drf-spectacular (>=0.29.0,<1.0.0)",
+    "django-select2 (>=8.4.0,<9.0.0)",
+    "sentry-sdk (>=2.0.0,<3.0.0)",
+    "python-magic (>=0.4.27,<1.0.0)",
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

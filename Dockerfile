@@ -1,15 +1,19 @@
 FROM python:3.12
 
-# Переменные окружения
 ENV PYTHONUNBUFFERED=1
+ENV POETRY_VIRTUALENVS_CREATE=false
+ENV POETRY_NO_INTERACTION=1
 
-# Рабочая директория
 WORKDIR /app
 
-# Копируем и устанавливаем зависимости ДО копирования кода
-COPY requirements.txt requirements.txt
-RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
+# Устанавливаем Poetry
+RUN pip install --upgrade pip && pip install poetry
+
+# Копируем файлы зависимостей
+COPY pyproject.toml poetry.lock ./
+
+# Устанавливаем зависимости
+RUN poetry install --only main --no-root
 
 # Копируем код приложения
 COPY mysite .
